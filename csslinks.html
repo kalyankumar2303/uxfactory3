@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Links</title>
+    <style>
+
+      /* Anchor Pseudo-classes */  
+      /* Unvisited link: a normal or unvisited link */
+      a:link {
+          color: red;
+          text-decoration: none;
+      }
+
+      /* Visited link: a link the user has visited */
+      a:visited {
+          color: green;
+      }
+
+      /* Mouse over link: when the user mouse over on it */
+      a:hover {
+          color:rgb(167, 40, 218);
+          text-decoration: underline;
+      }
+
+      /* Selected link : a link the moment it is clicked */
+      a:active {
+          color:goldenrod;
+      }
+
+      a.amazon:link {
+          background-color:mediumspringgreen;
+          padding: 8px 12px;
+          text-align: center;
+          text-decoration: none;
+          color: #000000;
+          margin: 50px;
+          display: inline-block;
+      }
+
+      a.amazon:hover, a.amazon:active {
+          background-color:mediumvioletred;
+          color:snow;
+      }
+
+    </style>
+  </head>
+  <body>
+     <!--  <a href="http://www.google.com" target="_blank">Visit Google!</a> -->
+      <a class="amazon" href="http://www.amazon.in" target="_blank">Go to Amazon</a>
+  </body>
+</html>

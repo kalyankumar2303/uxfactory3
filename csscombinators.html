@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Combinators</title>
+    <style>
+      /*DESCENDANT SELECTOR( )*/
+      div p {
+       /*  background-color: chocolate;
+        border: 2px solid black;
+        padding: 10px; */
+      } 
+
+      /*CHILD SELECTOR(>)*/
+      div > p {
+        background-color:blueviolet;
+        border: 2px solid black;
+        padding: 10px;
+      }
+
+    /* ADJACENT SIBLING SELECTOR (+) */
+    div + p {
+       /*  background-color:darkolivegreen;
+        border: 2px solid black;
+        padding: 10px; */
+    }
+
+    /* GENERAL SIBLING SELECTOR (~) */
+
+    div ~ p {
+        /* background-color:rgb(3, 129, 247);
+        border: 2px solid black;
+        padding: 10px; */
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1>CSS Combinators</h1>
+    <div>
+      <p>Paragraph 1 in the div</p>
+      <p>Paragraph 2 in the div</p>
+      <article><p>Paragraph 3 in the div</p></article>
+      <p>Paragraph 4 in the div</p>
+    </div>
+    <p>Paragraph 5 outside the div</p>
+    <p>Paragraph 6 outside the div</p>
+    <p>Paragraph 7 outside the div</p>
+  </body>
+</html>

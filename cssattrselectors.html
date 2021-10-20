@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Attribute Selectors</title>
+    <style>
+      /* CSS [attribute] Selector : selects all elements with a specified attribute*/
+      a[href] {
+        color: blue;
+        font-size: 30px;
+      }
+
+      /* CSS [attribute="value"] : selects all elements with a specified attribute and value. */
+      img[alt="robot"] {
+        border: 2px solid red;
+      }
+
+      /* CSS [attribute~="value"] : selects all elements with an attribute 
+                                    and value containting a specified word */
+      img[title~="womans"] {
+        border: 2px solid blue;
+      }
+
+      /*CSS [attribute|="value"]:selects all elements with the specified attribute starting with specified value */
+      [class|="top"] {
+        background-color: crimson;
+      }
+
+      /*CSS [attribute^="value"] : selects all elements whose attribute 
+                                    value begins with a specified value.*/
+      [class^="top"] {
+        background-color: crimson;
+      }
+
+      /* CSS [attribute$="value"]: selects all elements whose attribute value ends with a specified value.*/
+      [class$="div"] {
+          background-color: darkorange;
+      }
+
+      /* CSS [attribute*="value"]: selects all elements whose attribute value contains a specified word*/
+      [class*="th"] {
+          background-color: darkred;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <a href="http://www.google.com" target="_blank">Visit Google</a><br />
+    <a href="http://www.microsoft.com" target="_blank">Visit Microsoft</a><br />
+    <img
+      src="images/household-robot.jpg"
+      title="robot image household small"
+      alt="robot"
+      height="100"
+      width="100"
+    /><br />
+    <img
+      src="images/womans_hand_ca_drought_0.jpg"
+      title="drought image womans hand drought"
+      alt="drought"
+      height="100"
+      width="100"
+    /><br />
+    <h1 class="top">Heading text 1</h1>
+    <p class="top-paragraph">Paragraph text 1</p>
+    <p class="topcontent">Paragraph text 2</p>
+    <div class="firstdiv">Div1</div>
+    <div class="second_div">Div2</div>
+    <div class="third-div">Div3</div>
+    <div class="fourth">Div4</div>
+  </body>
+</html>

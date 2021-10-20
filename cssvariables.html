@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Variables</title>
+    <style>
+      :root {
+        --blue: #a7a8c7;
+        --green: #16da20;
+      }
+
+      p {
+        --red: #f34747;
+        --black: #000000;
+        background-color: var(--red);
+        border: 2px solid var(--black);
+        color: var(--black);
+      }
+
+      div {
+        background-color: var(--green);
+      }
+
+      h1 {
+        background-color: var(--blue);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      euismod et magna id placerat. Phasellus fringilla velit ut porta lacinia.
+      Integer elementum, neque sed sollicitudin tincidunt, nibh justo feugiat
+      tellus, a lacinia erat lectus eu tellus. Donec varius convallis nisl, sit
+      amet auctor turpis euismod id.
+    </p>
+    <div>
+      euismod et magna id placerat. Phasellus fringilla velit ut porta lacinia.
+      Integer elementum, neque sed sollicitudin tincidunt, nibh justo feugiat
+      tellus, a lacinia erat lectus eu tellus. Donec varius convallis nisl, sit
+      amet auctor turpis euismod id.euismod et magna id placerat. Phasellus
+      fringilla velit ut porta lacinia. Integer elementum, neque sed
+      sollicitudin tincidunt, nibh justo feugiat tellus, a lacinia erat lectus
+      eu tellus. Donec varius convallis nisl, sit amet auctor turpis euismod id.
+    </div>
+    <h1>euismod et magna id placerat.</h1>
+  </body>
+</html>

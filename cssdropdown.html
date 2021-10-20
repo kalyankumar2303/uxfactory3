@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Dropdowns</title>
+    <style>
+      .dropbtn {
+        padding: 15px;
+        background-color: cadetblue;
+        color: white;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown {
+          display: inline-block;
+      }
+
+      .dropdown-content {
+          display: none;
+      }
+
+      .dropdown-content a{
+          display: block;
+          color: black;
+          padding: 15px;
+          text-decoration: none;
+          background-color: burlywood;
+          width: 145px;
+      }
+
+      .dropdown-content a:hover {
+          background-color: cyan;
+      }
+
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button class="dropbtn">Mobiles</button>
+      <div class="dropdown-content">
+        <a href="#">Iphone</a>
+        <a href="#">Samsung</a>
+        <a href="#">Oneplus</a>
+        <a href="#">Oppo</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Tables</title>
+    <style>
+       #students {
+          font-family:Arial, Helvetica, sans-serif;
+          width: 100%;
+          border-collapse: collapse;
+       } 
+
+       #students td, #students th {
+           border: 1px solid rgb(224, 75, 75);
+           padding: 8px;
+       }
+
+       #students tr:nth-child(even){
+         background-color:rgb(243, 153, 153);
+       }
+
+       #students tr:hover {
+          background-color:turquoise;
+       }
+
+       #students th {
+           text-align: left;
+           padding-top: 12px;
+           padding-bottom: 12px;
+           background-color: rgb(110, 173, 138);
+           color: white;
+       }
+    </style>
+  </head>
+  <body>
+    <table id="students">
+      <tr>
+        <th>Student Name</th>
+        <th>Batch Code</th>
+        <th>Place</th>
+        <th>Rank</th>
+      </tr>
+      <tr>
+        <td>Srikanth</td>
+        <td>CHAD</td>
+        <td>Vijayawada</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Gopi</td>
+        <td>HCA</td>
+        <td>Guntur</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Vishnu</td>
+        <td>CHAG</td>
+        <td>Hyderabad</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>Tarun</td>
+        <td>CHAK</td>
+        <td>Chennai</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Samantha</td>
+        <td>CHAJ</td>
+        <td>Bengaluru</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Kajal</td>
+        <td>CHAQ</td>
+        <td>Vijag</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Raasi Khanna</td>
+        <td>CHAS</td>
+        <td>Goa</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>Pooja Hedge</td>
+        <td>CHAW</td>
+        <td>Ooty</td>
+        <td>8</td>
+      </tr>
+    </table>
+  </body>
+</html>
